@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  h1 {
+    font-weight: 300;
+  }
+  </style>
+</head>
+<body>
+  <h1>Toast Demo</h1>
+  <button id="generateSuccess">Generate success toast</button>
+  <button id="generateError">Generate error toast</button>
+  <button id="generateNeutral">Generate neutral toast</button>
+
+  <dile-toast id="myToast"></dile-toast> 
+
+  <script src="../dile-toast.js" type="module"></script>
+  <script>
+  let toastElement = document.getElementById('myToast');
+  document.getElementById('generateSuccess').addEventListener('click', () => {
+    toastElement.open('This is a success toast!!', 'success');
+  });
+  document.getElementById('generateError').addEventListener('click', () => {
+    toastElement.open('This is an error toast :(', 'error');
+  });
+  document.getElementById('generateNeutral').addEventListener('click', () => {
+    toastElement.open('This is imply a neutral toast.', 'neutral');
+  });
+  </script>
+</body>
+</html>
