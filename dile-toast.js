@@ -54,7 +54,6 @@ export class DileToast extends LitElement {
 
   programMessageHide() {
     setTimeout( () => {
-      console.log('hidetoast');
       let foundItemToHide = false;
       this.messages = this.messages.map( (item) => {
         if(!foundItemToHide && !item.hidden) {
@@ -75,7 +74,6 @@ export class DileToast extends LitElement {
       clearTimeout(this.cleanTimeout);
     }
     this.cleanTimeout = setTimeout(() => {
-      console.log('go to clean');
       this.messages = this.messages.filter((item) => !item.hidden);
     }, this.duration + 1000);
   }
