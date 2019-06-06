@@ -39,7 +39,7 @@ export class DileToast extends LitElement {
     `;
   }
 
-  open(text, toastType) {
+  open(text, toastType = 'neutral') {
     this.messages = [
       ...this.messages,
       {
