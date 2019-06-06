@@ -48,7 +48,6 @@ export class DileToast extends LitElement {
         hidden: false,
       } 
     ];
-    this.idToast++;
     this.programMessageClean();
     this.programMessageHide();
   }
