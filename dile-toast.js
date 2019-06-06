@@ -5,7 +5,9 @@ export class DileToast extends LitElement {
 
   static get properties() {
     return {
+      /* Messages array: Array of objects. You usually will not touch directly this array, instead of it, use the open() method */
       messages: { type: Array },
+      /* Miliseconds the feedback message remains on the screen */
       duration: { type: Number }
     };
   }
@@ -39,6 +41,11 @@ export class DileToast extends LitElement {
     `;
   }
 
+  /**
+   * Send a message to show in the screen
+   * @param text the text of the message
+   * @param toastType the status of the message (success, error, neutral)
+   */
   open(text, toastType = 'neutral') {
     this.messages = [
       ...this.messages,
@@ -48,11 +55,14 @@ export class DileToast extends LitElement {
         hidden: false,
       } 
     ];
-    this.programMessageClean();
-    this.programMessageHide();
+    this._programMessageClean();
+    this._programMessageHide();
   }
 
-  programMessageHide() {
+  /**
+   * Programs the last message to hide it from the screen, after the duration time be consumed
+   */
+  _programMessageHide() {
     setTimeout( () => {
       let foundItemToHide = false;
       this.messages = this.messages.map( (item) => {
@@ -69,7 +79,10 @@ export class DileToast extends LitElement {
     }, this.duration);
   }
 
-  programMessageClean() {
+  /**
+   * Programs the cleaning of the array of messages, removing the hidden messages elements
+   */
+  _programMessageClean() {
     if(this.cleanTimeout) {
       clearTimeout(this.cleanTimeout);
     }
