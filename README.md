@@ -6,7 +6,7 @@ This is a Web Component to send feedback to the user, inspired on the Material D
 <dile-toast id="myToast" duration="5000"></dile-toast>
 ```
 
-Let's [go to DEMO page](https://dile-toast.netlify.com/)! 
+Let's [go to DEMO page](https://dile-toast.polydile.com/)! 
 
 ## Properties
 
