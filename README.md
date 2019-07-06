@@ -6,7 +6,7 @@ This is a Web Component to send feedback to the user, inspired on the Material D
 <dile-toast id="myToast" duration="5000"></dile-toast>
 ```
 
-Let's [go to DEMO page](https://dile-toast.polydile.com)! 
+Let's [go to DEMO page](https://dile-toast.netlify.com/)! 
 
 ## Properties
 
@@ -36,4 +36,7 @@ Custom property | Description | Default
 --dile-toast-success-color | Success background color | #27ae60
 --dile-toast-error-color | Error background color | #e74c3c
 --dile-toast-neutral-color | Neutral background color | #303030
+--dile-toast-text-color | Text color | #fff
+--dile-toast-width | With of the toast element | 280px
+--dile-toast-padding | Padding for the toasts | 10px 15px
 

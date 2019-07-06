@@ -25,13 +25,13 @@ export class DileToastItem extends LitElement {
         display: block;
       }
       div {
-        color: #fff;
-        padding: 10px 15px;
+        color: var(--dile-toast-text-color, #fff);
+        padding: var(--dile-toast-padding, 10px 15px);
         margin-top: 10px;
         position: relative;
         top: 0;
         opacity: 1;
-        width: 260px;
+        width: var(--dile-toast-width, 280px);
         overflow: hidden;
         transition: all 0.4s ease;
       }
