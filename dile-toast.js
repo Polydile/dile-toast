@@ -53,6 +53,7 @@ export class DileToast extends LitElement {
         text,
         toastType,
         hidden: false,
+        opening: true,
       } 
     ];
     this._programMessageClean();
@@ -60,7 +61,7 @@ export class DileToast extends LitElement {
   }
 
   /**
-   * Programs the last message to hide it from the screen, after the duration time be consumed
+   * Programs the hiding of the last message, after it's duration time
    */
   _programMessageHide() {
     setTimeout( () => {

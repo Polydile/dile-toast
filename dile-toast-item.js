@@ -12,7 +12,8 @@ export class DileToastItem extends LitElement {
     this.msg = {
       msg: '',
       toastType: 'neutral',
-      hidden: false
+      hidden: false,
+      opening: true,
     }
   }
 
@@ -50,15 +51,26 @@ export class DileToastItem extends LitElement {
       .neutral {
         background-color: var(--dile-toast-neutral-color, #303030);
       }
+      .opening {
+        top: -20px;
+      }
     `;
   }
 
   render() {
     return html`
-    <div class="${ this.msg.hidden ? 'hidden' : '' } ${ this.getClassType(this.msg.toastType) }">
+    <div class="${ this.msg.hidden ? 'hidden' : '' } ${ this.msg.opening ? 'opening' : '' } ${ this.getClassType(this.msg.toastType) }">
       ${this.msg.text}
     </div>
     `;
+  }
+
+  firstUpdated() {
+    setTimeout(() => {
+      this.msg.opening = false;
+      this.requestUpdate();
+    }, 20);
+    
   }
 
   getClassType(toastType) {
