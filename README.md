@@ -39,4 +39,4 @@ Custom property | Description | Default
 --dile-toast-text-color | Text color | #fff
 --dile-toast-width | With of the toast element | 280px
 --dile-toast-padding | Padding for the toasts | 10px 15px
-
+--dile-toast-z-index | z-index for the toasts | 1001

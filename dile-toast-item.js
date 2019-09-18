@@ -35,6 +35,7 @@ export class DileToastItem extends LitElement {
         width: var(--dile-toast-width, 280px);
         overflow: hidden;
         transition: all 0.4s ease;
+        z-index: var(--dile-toast-z-index, 1001);
       }
       .hidden {
         top: 20px;
