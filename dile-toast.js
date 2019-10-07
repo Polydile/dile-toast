@@ -22,7 +22,8 @@ export class DileToast extends LitElement {
   static get styles() {
     return css`
       :host {
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
         position: fixed;
         bottom: 20px;
         left: 15px;
