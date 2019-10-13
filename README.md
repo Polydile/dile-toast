@@ -40,3 +40,5 @@ Custom property | Description | Default
 --dile-toast-width | With of the toast element | 280px
 --dile-toast-padding | Padding for the toasts | 10px 15px
 --dile-toast-z-index | z-index for the toasts | 1001
+--dile-toast-font-weight | Messages font weight | normal
+--dile-toast-font-size | Messages font size | 1em
