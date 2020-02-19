@@ -49,6 +49,7 @@ storiesOf('dile-toast', module)
         --dile-toast-error-color: #fcc;
         --dile-toast-font-weight: bold;
         --dile-toast-font-size: 0.8em;
+        --dile-toast-border-radius: 0;
       }
       </style>
       <dile-toast id="myToast"></dile-toast> 
