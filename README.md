@@ -42,4 +42,4 @@ Custom property | Description | Default
 --dile-toast-z-index | z-index for the toasts | 1001
 --dile-toast-font-weight | Messages font weight | normal
 --dile-toast-font-size | Messages font size | 1em
---dile-toast-border-radius | Border radius | 5px
+--dile-toast-border-radius | Border radius | 0

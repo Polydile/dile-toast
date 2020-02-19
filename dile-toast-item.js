@@ -38,7 +38,7 @@ export class DileToastItem extends LitElement {
         z-index: var(--dile-toast-z-index, 1001);
         font-size: var(--dile-toast-font-size, 1em);
         font-weight: var(--dile-toast-font-weight, normal);
-        border-radius: var(--dile-toast-border-radius, 5px);
+        border-radius: var(--dile-toast-border-radius, 0);
       }
       .hidden {
         top: 20px;
