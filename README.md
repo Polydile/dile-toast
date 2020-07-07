@@ -1,3 +1,7 @@
+# Moved
+
+**This package has moved** and is now available at [@dile/dile-toast](https://github.com/Polydile/dile-components). Please update your dependencies. This repository is no longer maintained.
+
 # dile-toast
 
 This is a Web Component to send feedback to the user, inspired on the Material Design "toast" component, based on LitElement.
