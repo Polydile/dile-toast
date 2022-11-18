@@ -19,6 +19,6 @@
     "lit-element": "^2.1.0"
   },
   "devDependencies": {
-    "@open-wc/demoing-storybook": "^0.2.0"
+    "@open-wc/demoing-storybook": "^2.4.7"
   }
 }
